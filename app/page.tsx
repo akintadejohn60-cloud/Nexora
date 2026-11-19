@@ -10,7 +10,7 @@ export default function Home() {
       <nav className="nav wrap">
         <a className="brand" href="#"><span className="brand-mark">N</span>NEXORA</a>
         <div className="nav-links"><a href="#features">Features</a><a href="#about">About</a></div>
-        <a className="nav-cta" href="#get-started">Get started <span>↗</span></a>
+        <a className="nav-cta" href="/dashboard">Get started <span>↗</span></a>
       </nav>
 
       <section className="hero wrap" id="about">
@@ -19,7 +19,7 @@ export default function Home() {
           <h1>Make room for<br /><span>what matters.</span></h1>
           <p className="hero-text">Your goals, plans, and everyday progress — brought together in one intelligent space. Less noise. More direction.</p>
           <div className="hero-actions">
-            <a className="primary-btn" href="#get-started">Explore NEXORA <span>→</span></a>
+            <a className="primary-btn" href="/dashboard">Explore NEXORA <span>→</span></a>
             <a className="secondary-btn" href="#features">Discover more</a>
           </div>
           <div className="hero-note"><span className="avatars">✦ ◈ ◎</span> A clearer way to move forward.</div>
@@ -49,7 +49,7 @@ export default function Home() {
         <div className="feature-grid">{features.map((feature) => <article className="feature-card" key={feature.title}><div className="feature-icon">{feature.icon}</div><h3>{feature.title}</h3><p>{feature.text}</p><span className="feature-arrow">↗</span></article>)}</div>
       </section>
 
-      <section className="closing wrap" id="get-started"><div><div className="eyebrow">THE NEXT CHAPTER STARTS HERE</div><h2>Give your ideas<br />somewhere to go.</h2></div><a className="primary-btn" href="mailto:hello@nexora.app">Coming soon <span>↗</span></a></section>
+      <section className="closing wrap" id="get-started"><div><div className="eyebrow">THE NEXT CHAPTER STARTS HERE</div><h2>Give your ideas<br />somewhere to go.</h2></div><a className="primary-btn" href="/dashboard">Open your dashboard <span>↗</span></a></section>
       <footer className="footer wrap"><a className="brand" href="#"><span className="brand-mark">N</span>NEXORA</a><span>© 2026 NEXORA. Built for your next chapter.</span><span>Clarity in every step. ✦</span></footer>
     </main>
   );
